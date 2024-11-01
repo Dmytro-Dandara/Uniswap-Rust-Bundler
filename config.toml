@@ -1,0 +1,56 @@
+[connection]
+ethereum_rpc_url = "http://6.9.49.82:28545"
+flashbots_url = "https://relay.flashbots.net"     
+#ethereum_rpc_url = "https://eth-sepolia.g.alchemy.com/v2/Rjy3brdwjWzejidRH9GxgeFbHBxZhsBe"
+#flashbots_url = "https://relay-sepolia.flashbots.net"             
+builders_url = [
+    "https://rpc.beaverbuild.org/",
+    "https://rpc.titanbuilder.xyz",
+    "https://builder0x69.io",
+    "https://mev.api.blxrbdn.com",
+    "https://buildai.net/",
+    "https://api.blocknative.com/v1/auction",
+    "https://eth-builder.com/",
+    "https://boba-builder.com/searcher/bundle",
+    "https://rpc.payload.de",
+    "https://api.edennetwork.io/v1/bundle",
+    "https://builder.eigenphi.io/",
+    "https://rpc.lokibuilder.xyz/",
+    "https://relay.flashbots.net",
+    "https://builder.flashbots.net",
+    "https://builder.ethermine.org"
+]
+
+[contract]
+address = "" 
+uniswap_v2_router = "0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D"            
+weth = "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"     
+#uniswap_v2_router = "0xC532a74256D3Db42D0Bf7a0400fEFDbad7694008"         
+#weth = "0x7b79995e5f793A07Bc00c21412e50Ecae098E7f9"        
+
+
+[bundle]#0.000000002  =2gwei
+bundler_key = "41b51c4cd90d3dc32e5562681160b3e0ff38171027ea216234d216b65439c0e0"
+priority_fee =  0.000000003
+miner_tip = 0
+retries = 10
+delay_s = 20
+
+
+[sniper] #0.01 = 1% , 0.0099 0.99%
+buyback = 0.0099            
+max_limit= 0.0099
+
+private_keys = [
+
+"9989c04070c5aba57b33fa7e6f25e45ed0e1eec3e33603640d14b512acb2a1ca", #deployer key
+
+"7ccdcdf439cf78bf06aa140c0f0634a3376d1792e8dd1f98d95382693f4e9be8", #wallet key
+"9fb4166f9a655d1e70f08f43384d4c597b5b59cb4b1fc92418706998a2ae24c1",
+"c39752d67e09772c59ed55b84e2331de6a685d7f2c27421a09b64699d9e60615",
+"8d3e6b09db0da60b1591678fbb4eb06f10ccbcdca5952a73323878c7ca0e1211",
+"90b488f14f2bda15024764f1a9939f67df003191e53b734ebcbb41a0e37b87b1",
+"56b905b35efea6f0b611b6f22a690964261164adfd6b2c836d928a65afa449ea",
+"c7723f146157a7000293d3a7fcdea7d85a104ebac03b53a443afa4e2e2605c0b",
+
+]
